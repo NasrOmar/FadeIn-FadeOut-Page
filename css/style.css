@@ -1,3 +1,38 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Helvetica neue, Arial;
+	color: #232323;
+}
+
+.main-content {
+	margin: 50px 20px 0;
+	text-align: center;
+	background-color: #E1E1E1;
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.link {
+	margin-top: 10px;
+	display: inline-block;
+	background-color: #FFF;
+	color: #434343;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid #434343;
+	transition: .2s ease-out;
+}
+
+.link:hover {
+	background-color: #434343;
+	border-color: #FFF;
+	color: #FFF;
+}
