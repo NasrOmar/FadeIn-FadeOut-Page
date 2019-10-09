@@ -1,8 +1,10 @@
+// Fade In Page
 function fadeInPage() {
 	var fader = document.getElementById('page-fader');
 	fader.classList.add('fade-in-page');
 }
 
+// Fade Out Page
 document.addEventListener('DOMContentLoaded', function() {
 	var links = document.getElementsByClassName('link');
 	
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 });
 
-//The below is for the page not to be shown in the fade out transition if loaded from cache.
+// The below is for the page not to be shown in the fade out transition if loaded from cache.
 window.addEventListener('pageshow', function (event) {
   if (!event.persisted) {
     return;
