@@ -5,13 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>FadeIn-FadeOut</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/page-fader.js"></script>
 	</head>
 	
 	<body>
+		<svg id="page-fader"></svg>
+		<script>fadeInPage()</script>
 		<div class="main-content">
 			<h1>Fade In &amp; Out</h1>
 			<p>Click on the below button to fade out during unload.</p>
-			<a href="fadeout-fadein.html" class="link">Click Here</a>
+			<a href="fadeout-fadein.html" class="link" onclick="fadeOutPage()">Click Here</a>
 		</div>
 	</body>
 </html>
