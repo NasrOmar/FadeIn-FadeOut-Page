@@ -8,7 +8,7 @@ function fadeInPage() {
 document.addEventListener('DOMContentLoaded', function() {
 	var links = document.getElementsByClassName('link');
 	
-	for (var i=0; i<links.length; i+=1) {
+	for (i = 0; i < links.length; i++) {
 		links[i].addEventListener('click', function(event) {
 			var fader = document.getElementById('page-fader');
 			links = event.currentTarget;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // The below is for the page not to be shown in the fade out transition if loaded from cache.
-window.addEventListener('pageshow', function (event) {
+window.addEventListener('pageshow', function(event) {
   if (!event.persisted) {
     return;
   }
